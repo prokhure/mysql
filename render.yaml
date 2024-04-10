@@ -3,7 +3,6 @@ services:
   name: mysql
   plan: standard
   env: docker
-  autoDeploy: true
   disk:
     name: mysql
     mountPath: /var/lib/mysql
@@ -15,10 +14,10 @@ envVarGroups:
 - name: mysql
   envVars:
   - key: MYSQL_DATABASE
-    value: mysql
+    value: prokure
   - key: MYSQL_USER
-    value: mysql
+    value: root
   - key: MYSQL_PASSWORD
-    generateValue: true
+    value: Sammy1234
   - key: MYSQL_ROOT_PASSWORD
-    generateValue: true
+    value: Sammy1234
